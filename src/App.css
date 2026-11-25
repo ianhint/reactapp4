@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f4f7fb;
+  color: #1f2937;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: right;
+  gap: 8px;
+  padding: 10px;
+  background: #1e293b;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 5px 6px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+nav a:hover {
+  background: #334155;
+}
+
+h3 {
+  max-width: 700px;
+  margin: 60px auto;
+  padding: 32px;
+  text-align: center;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  h3 {
+    margin: 30px 16px;
+  }
+}
+/* Cars.css */
+.cars-page {
+  max-width: 1000px;
+  margin: 48px auto;
+  padding: 0 24px;
+}
+
+.cars-page h1 {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.cars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.car-card {
+  padding: 28px 20px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.car-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.contact-page {
+  min-height: calc(100vh - 56px);
+  display: grid;
+  place-items: center;
+  padding: 24px;
+}
+
+.contact-form {
+  width: min(100%, 460px);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 32px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.contact-form h1 {
+  margin: 0 0 8px;
+  text-align: center;
+}
+
+.contact-form label {
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  outline: 3px solid rgba(37, 99, 235, 0.15);
+}
+
+.contact-form button {
+  margin-top: 8px;
+  padding: 12px;
+  border: 0;
+  border-radius: 8px;
+  background:purple;
+  color: #ffffff;
+  font-weight: 700;
+  cursor: pointer;
+}
